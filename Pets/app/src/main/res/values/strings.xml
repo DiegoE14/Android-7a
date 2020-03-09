@@ -9,4 +9,6 @@
     <string name="btn_Sing_in">Sing In</string>
     <string name="btn_Sing_up">Sing Up</string>
     <string name="txt_loginbar">Login</string>
+    <string name="ht_email">Peter@gmail.com</string>
+    <string name="ht_pass">Your password</string>
 </resources>
