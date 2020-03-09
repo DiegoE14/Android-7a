@@ -14,29 +14,39 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Creating app on device", Toast.LENGTH_LONG).show();
     }
+
     @Override
+
     protected void onStart(){
         super.onStart();
-        Toast.makeText(this, "The app has started", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Creating app on started", Toast.LENGTH_LONG).show();
     }
+
     @Override
+
     protected void onResume(){
         super.onResume();
-        Toast.makeText(this, "The app has resume", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Creating app on screen", Toast.LENGTH_LONG).show();
     }
+
     @Override
+
     protected void onPause(){
         super.onPause();
-        Toast.makeText(this, "The app has pause", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Creating app on paused", Toast.LENGTH_LONG).show();
     }
+
     @Override
+
     protected void onStop(){
         super.onStop();
-        Toast.makeText(this, "The app has stop", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Creating app on stopped", Toast.LENGTH_LONG).show();
     }
+
     @Override
+
     protected void onRestart(){
         super.onRestart();
-        Toast.makeText(this, "The app has restart", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "The app has been restarted", Toast.LENGTH_LONG).show();
     }
 }
