@@ -3,6 +3,7 @@ package com.example.colors;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -58,43 +59,72 @@ public class Palette extends AppCompatActivity
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.iteTransparent:
-                Toast.makeText(this, "This color ig going to change to transparent", Toast.LENGTH_SHORT).show();
+                //Code to change color
+                vAlpha.setProgress(0);
                 break;
             case R.id.iteSemitransparent:
                 //Code to change color
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteOpaque:
                 //Code to change color
+                vAlpha.setProgress(255);
                 break;
             case R.id.iteBlack:
                 //Code to change color
+                //WORK
                 break;
             case R.id.iteWhite:
                 //Code to change color
+                //WORK
                 break;
             case R.id.iteRed:
                 //Code to change color
+                vRed.setProgress(255);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteGreen:
-                //Code to change color
+                //Code to change color to green
+                vRed.setProgress(0);
+                vGreen.setProgress(255);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteBlue:
-                //Code to change color
+                //Code to change color to blue
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteCyan:
                 //Code to change color
+                //WORK
                 break;
             case R.id.iteMagenta:
                 //Code to change color
+                //WORK
                 break;
             case R.id.iteYellow:
                 //Code to change color
+                //WORK
                 break;
             case R.id.iteReset:
                 //Code to change color
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(0);
                 break;
             case R.id.iteAboutof:
-                //Code to change color
+                //Go to ABoutOf Activity
+                Intent intent = new Intent(this, activity_Aboutof.class);
+                startActivity(intent);
                 break;
         }
         return super.onOptionsItemSelected(item);
