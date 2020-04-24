@@ -3,9 +3,11 @@ package com.example.colors;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -40,9 +42,12 @@ public class Palette extends AppCompatActivity
         vGreen.setOnSeekBarChangeListener(this);
         vBlue.setOnSeekBarChangeListener(this);
         vAlpha.setOnSeekBarChangeListener(this);
+
+        //Show the context menu when i do a long press in the component
+        registerForContextMenu(vFilter);
     }
     //#################################
-    //MENUS
+    // OPTIONS MENUS
     //#################################
     // Shown the options menu on the Device
 
@@ -58,6 +63,12 @@ public class Palette extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
+            case R.id.icHelp :
+                Toast.makeText(this,"You pressed help icon", Toast.LENGTH_SHORT);
+                break;
+            case R.id.icTransparent :
+                vAlpha.setProgress(0);
+                break;
             case R.id.iteTransparent:
                 //Code to change color
                 vAlpha.setProgress(0);
@@ -129,6 +140,31 @@ public class Palette extends AppCompatActivity
         }
         return super.onOptionsItemSelected(item);
     }
+
+    //#################################
+    // CONTEXT MENUS
+    //#################################
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        MenuInflater inflater2 = getMenuInflater();
+        inflater2.inflate(R.menu.menu2, menu);
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.iteHelp:
+                Toast.makeText(this, "You pressed help icon", Toast.LENGTH_SHORT);
+                break;
+        }
+        return super.onContextItemSelected(item);
+    }
+
+    //#################################
+    // SEEKBARS
+    //#################################
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int i, boolean bo) {
