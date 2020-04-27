@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="buttons_color">#B30606</color>
+
+    <color name="layaoutH1">#EBA530</color>
+    <color name="layaoutH2">#F3D171</color>
+    <color name="layaoutH3">#FE6363</color>
+    <color name="layaoutH4">#6880F7</color>
 </resources>

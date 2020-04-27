@@ -87,10 +87,18 @@ public class Palette extends AppCompatActivity
             case R.id.iteBlack:
                 //Code to change color
                 //WORK
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(200);
                 break;
             case R.id.iteWhite:
                 //Code to change color
                 //WORK
+                vRed.setProgress(255);
+                vGreen.setProgress(255);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(200);
                 break;
             case R.id.iteRed:
                 //Code to change color
@@ -116,14 +124,26 @@ public class Palette extends AppCompatActivity
             case R.id.iteCyan:
                 //Code to change color
                 //WORK
+                vRed.setProgress(0);
+                vGreen.setProgress(255);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteMagenta:
                 //Code to change color
                 //WORK
+                vRed.setProgress(150);
+                vGreen.setProgress(45);
+                vBlue.setProgress(110);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteYellow:
                 //Code to change color
                 //WORK
+                vRed.setProgress(255);
+                vGreen.setProgress(255 );
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteReset:
                 //Code to change color

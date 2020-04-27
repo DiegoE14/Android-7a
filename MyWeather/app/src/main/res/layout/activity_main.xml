@@ -13,114 +13,134 @@
         android:padding="10dp">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/txtSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="@string/hnt_ex_city"
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Button" />
+            android:background="@color/buttons_color"
+            android:text="@string/btn_tittle_search"
+            android:textColor="#FFFFFF" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/layaoutH1">
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="@string/lbl_current"
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
+                android:id="@+id/lblCurrent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:hint="@string/hnt_current"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/layaoutH2">
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="@string/lbl_min"
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+                android:id="@+id/lblMin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:hint="@string/hnt_min"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:background="@color/layaoutH3"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="@string/lbl_max"
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
+                android:id="@+id/lblMax"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:hint="@string/hnt_max"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/layaoutH4">
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="@string/lbl_weather"
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
+                android:id="@+id/lblWeatherDescription"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:hint="@string/hnt_weather"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imgWeather"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="135dp"
             android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/ic_sun" />
+            app:srcCompat="@drawable/ic_sun" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/btn_map_google"
+            android:background="@color/buttons_color"
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
 

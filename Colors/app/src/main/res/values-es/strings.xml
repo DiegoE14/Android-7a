@@ -19,4 +19,5 @@
     <string name="lbl_green">Verde</string>
     <string name="lbl_red">Rojo</string>
     <string name="lblHelp">Ayuda</string>
+    <string name="lblColors">Colores</string>
 </resources>

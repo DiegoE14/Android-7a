@@ -15,6 +15,8 @@
         />
 
 
+    <item android:id="@+id/iteColors" android:title="@string/lblColors" />
+
     <item android:id="@+id/iteTransparent" android:title="@string/lblOpTransparent"/>
     <item android:id="@+id/iteSemitransparent" android:title="@string/lblOpSemiTransparent"/>
     <item android:id="@+id/iteOpaque" android:title="@string/lblOpOpaque"/>
