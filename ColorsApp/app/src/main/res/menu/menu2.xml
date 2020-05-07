@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/iteReset"
+        android:icon="@drawable/ic_reset"
+        android:title="@string/lblOpReset"
+        app:showAsAction="withText"/>
+    <item android:id="@+id/ic2Help"
+        android:title="@string/ic2help"
+        android:icon="@drawable/ic_help2"
+        app:showAsAction="withText" />
+
+</menu>

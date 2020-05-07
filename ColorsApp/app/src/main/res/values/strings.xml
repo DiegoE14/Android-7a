@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Colors</string>
+    <string name="lbl_red">Red</string>
+    <string name="lbl_green">Green</string>
+    <string name="lbl_blue">Blue</string>
+    <string name="lbl_alpha">Alpha</string>
+    <!-- Option menu labels -->
+    <string name="lblOpTransparent">Transparent</string>
+    <string name="lblOpSemiTransparent">SemiTransparent</string>
+    <string name="lblOpOpaque">Opaque</string>
+    <string name="lblOpBlack">Black</string>
+    <string name="lblOpWhite">White</string>
+    <string name="lblOpRed">Red</string>
+    <string name="lblOpGreen">Green</string>
+    <string name="lblOpBlue">Blue</string>
+    <string name="lblOpCyan">Cyan</string>
+    <string name="lblOpMagenta">Magenta</string>
+    <string name="lblOpYellow">Yellow</string>
+    <string name="lblOpReset">Reset</string>
+    <string name="lblOpAboutof">Aboutof</string>
+    <string name="lblHelp">Help</string>
+    <string name="lblColors">Colors</string>
+    <string name="lblCloseApp">CloseApp</string>
+    <string name="VieName">Diego Enriquez</string>
+    <string name="VieEmail">diegoenriquez21@hotmail.com</string>
+    <string name="VieU">UNICESMAG</string>
+    <string name="VieProgr">Systems engineer</string>
+    <string name="textHelp">If you need help contact: </string>
+    <string name="ic2help">Help</string>
+    <string name="sctitle">COLORS</string>
+    <string name="scname">By Diego Enriquez</string>
+</resources>

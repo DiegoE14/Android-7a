@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myweather">
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    package="com.example.colors">
 
     <application
         android:allowBackup="true"
@@ -12,16 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_Splsh_Scream"
-            android:theme="@style/SplahS"
-            >
+        <activity android:name=".activity_help" android:label="@string/lblHelp"
+            android:parentActivityName=".Palette"
+            ></activity>
+        <activity
+            android:name=".activity_Aboutof"
+            android:parentActivityName=".Palette"
+            android:label="@string/lblOpAboutof" />
+        <activity android:name=".Palette">
+
+        </activity>
+        <activity android:name=".MainActivity"
+            android:theme="@style/SplahS">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

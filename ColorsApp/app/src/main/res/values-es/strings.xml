@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Colores</string>
+    <string name="lblOpAboutof">Acerca de</string>
+    <string name="lblOpBlack">Negro</string>
+    <string name="lblOpBlue">Azul</string>
+    <string name="lblOpCyan">Cian</string>
+    <string name="lblOpGreen">Verde</string>
+    <string name="lblOpMagenta">Magenta</string>
+    <string name="lblOpOpaque">Opaco</string>
+    <string name="lblOpRed">Rojo</string>
+    <string name="lblOpSemiTransparent">Semitrasparente</string>
+    <string name="lblOpTransparent">Trasparente</string>
+    <string name="lblOpWhite">Blanco</string>
+    <string name="lblOpYellow">Amarillo</string>
+    <string name="lblOpReset">Restablecer</string>
+    <string name="lbl_alpha">Alfa</string>
+    <string name="lbl_blue">Azul</string>
+    <string name="lbl_green">Verde</string>
+    <string name="lbl_red">Rojo</string>
+    <string name="lblHelp">Ayuda</string>
+    <string name="lblColors">Colores</string>
+    <string name="lblCloseApp">Cerrar App</string>
+    <string name="VieName">Diego Enriquez</string>
+    <string name="VieEmail">diegoenriquez21@hotmail.com</string>
+    <string name="VieU">UNICESMAG</string>
+    <string name="VieProgr">ingeniería de sistemas</string>
+    <string name="textHelp">Si nesitas ayuda comunicate con: </string>
+    <string name="ic2help">Ayuda</string>
+    <string name="sctitle">COLORES</string>
+    <string name="scname">Por Diego Enriquez</string>
+</resources>

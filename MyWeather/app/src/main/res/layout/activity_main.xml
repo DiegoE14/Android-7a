@@ -21,7 +21,7 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
@@ -130,12 +130,13 @@
         <ImageView
             android:id="@+id/imgWeather"
             android:layout_width="match_parent"
-            android:layout_height="135dp"
+            android:layout_height="97dp"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/ic_sun" />
+            app:srcCompat="@drawable/ic_sun"
+            android:layout_marginBottom="20dp"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnGo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_map_google"
