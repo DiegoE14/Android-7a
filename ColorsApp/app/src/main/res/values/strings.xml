@@ -29,4 +29,5 @@
     <string name="ic2help">Help</string>
     <string name="sctitle">COLORS</string>
     <string name="scname">By Diego Enriquez</string>
+    <string name="HexName">Hexadecimal color:</string>
 </resources>

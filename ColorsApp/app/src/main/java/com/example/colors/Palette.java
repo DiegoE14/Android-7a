@@ -16,6 +16,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.NavigableSet;
@@ -29,6 +30,8 @@ public class Palette extends AppCompatActivity
     private SeekBar vBlue = null;
     private SeekBar vAlpha = null;
     private View vFilter = null;
+    private TextView vVC = null;
+    private TextView vVC2 = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +44,15 @@ public class Palette extends AppCompatActivity
         vGreen= findViewById(R.id.sbrGreen);
         vBlue= findViewById(R.id.sbrBlue);
         vAlpha= findViewById(R.id.sbrAlpha);
+        vVC= findViewById(R.id.ViewColor);
         vFilter=findViewById(R.id.vieColors);
 
         vRed.setOnSeekBarChangeListener(this);
         vGreen.setOnSeekBarChangeListener(this);
         vBlue.setOnSeekBarChangeListener(this);
         vAlpha.setOnSeekBarChangeListener(this);
+
+
 
         //Show the context menu when i do a long press in the component
         registerForContextMenu(vFilter);
@@ -217,6 +223,17 @@ public class Palette extends AppCompatActivity
 
         //3. Set the new color to Image (View)
         vFilter.setBackgroundColor(filter_color);
+
+        //4. Change RGB to HEX
+        String color="";
+        color="#";
+        color+=Integer.toHexString(r);
+        color+=Integer.toHexString(g);
+        color+=Integer.toHexString(b);
+
+        String name = getString(R.string.HexName);
+
+        vVC.setText(name + " " + color);
     }
 
     @Override

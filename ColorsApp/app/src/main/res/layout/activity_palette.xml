@@ -103,6 +103,13 @@
                 android:max="255"
                 android:progress="0"/>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/ViewColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/HexName" />
+
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
