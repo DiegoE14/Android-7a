@@ -4,43 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterUserActivity">
+    tools:context=".RegisterUserActivity"
+    android:background="@drawable/reg_bg"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp"
+
+        >
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/userName_label" />
+            android:text="@string/userName_label"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"/>
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/txtUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:background="@drawable/style_register_user"
+            android:layout_marginBottom="40dp"
+
+            />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Password_label" />
+            android:text="@string/Password_label"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:background="@drawable/style_register_user"
+            android:layout_marginBottom="40dp"
+
+            />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:background="@drawable/style_btn_newreg"
+            android:onClick="btnSignUp"
+            android:text="@string/BtnRegisterLabel"
+            android:textColor="@color/colorBtnRegText" />
     </LinearLayout>
 </RelativeLayout>

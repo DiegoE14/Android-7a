@@ -6,7 +6,11 @@
 
 
     <color name="colorHint">#FFFFFF</color>
+    <color name="colorTextHint">#FFFFFF</color>
     <color name="colorEtLine">#720A0A</color>
     <color name="colorBtnLogin">#720A0A</color>
     <color name="colorBtnLoginText">#FFFFFF</color>
+
+    <color name="colorBtnReg">#720A0A</color>
+    <color name="colorBtnRegText">#FFFFFF</color>
 </resources>

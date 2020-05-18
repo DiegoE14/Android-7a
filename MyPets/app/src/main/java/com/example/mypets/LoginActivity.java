@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void btnGotoLogin(View view){
-        Toast.makeText(this, "Empty data", Toast.LENGTH_LONG);
+        Toast.makeText(this, "Empty data", Toast.LENGTH_LONG).show();
     }
 
     public void btnGoToRegister(View view){
